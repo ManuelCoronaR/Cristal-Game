@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row1">
                 <div class="col" id="intr">
-                    <h2>Introduction</h2>
+                    <h2>Game's Instructions</h2>
                     <ul>
                         <ol>
                             <li>The computer will generate a target number at random.</li>
@@ -39,11 +39,14 @@
                             <li>Each time the game resets, the crystal's values will change.</li>
                         </ol>
                     </ul>
+                    <hr>
                     <div class="random row">
-                        <div class="col-md-2" id="randomNumber">xxx</div>
+                        <div class="col-sm-2 rounded-circle" id="randomNumber">xxx</div>
+                            <div id="scoreBoard" class="col-2">Wins: 78765
+                            <div class="col-2">Loses: 86765</div>
+                        </div>
                     </div>
-                    <div class="col-2">Wins:</div>
-                    <div class="col-2">Losses:</div>
+
                     <hr>
                     <div class="row" id="gemDiv">
                         <img src="images/blueGem.jpg" alt="Blue Gem" class="rounded-circle">
@@ -52,8 +55,9 @@
                         <img src="images/purpleGem.jpg" alt="Purple Gem" class="rounded-circle">
                     </div>
                     <p class="scoreP">Your ToTal Score Is:</p>
-                    <div class="total"></div>
+                    <div class="total" id="totalScore"></div>
                 </div>
+                <button type="button" class="btn btn-danger"><a href="#">Reset</a></button>
             </div>
         </div>
     </div>
