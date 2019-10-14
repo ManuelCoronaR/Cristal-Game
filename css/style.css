@@ -1,0 +1,32 @@
+body {
+    /* background-image: url(../images/backgroundIMG.jpg); */
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: fantasy;
+}
+.container-header {
+
+}
+.tittle{
+
+}
+.row1 {
+
+}
+.container {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#gemDiv {
+
+}
+
+
+
+
+.rounded {
+    width: 80px;
+    height: 80px;
+}
