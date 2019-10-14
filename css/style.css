@@ -9,7 +9,8 @@ body {
     margin-left: 100px;
     margin-right: 100px;
     font-family: 'Turret Road', cursive;
-    font-weight: 900;
+    font-weight: bolder;
+    text-decoration-line: none;
 }
 * {
     box-sizing: border-box;
@@ -33,7 +34,7 @@ h1 {
 }
 .container {
     width: 960px;
-    height: 780px;
+    height: 750px;
     margin-left: 200px;
     margin-right: 200px;
 }
@@ -47,12 +48,6 @@ ol {
 .targetIcon {
     width: 72px;
 }
-#randomNumber {
-    background-color: darkseagreen;
-    border:1px solid red;
-    font-size: 65px;
-    text-align: center;
-}
 #gemDiv {
     margin-bottom: 40px;
 }
@@ -60,13 +55,25 @@ ol {
     width: 120px;
     height: 120px;
     margin-left: 10px;
+    background-color: darkseagreen;
+    border:1px solid rgb(75, 247, 8);
+    font-size: 65px;
+    text-align: center;
 }
 #scoreBoard {
     float: right;
 }
-.scoreP {
+.score {
     font-family: 'Turret Road', cursive;
 }
 a {
     color: white;
 }
+.btn,
+.btn-danger {
+    border: none;
+    text-decoration-color: none;
+}
+
+
+@media only screen and (max-width: 980px) {

@@ -1,19 +1,19 @@
 $(document).ready(function () {
-    let Random = Math.floor(Math.random() * 100 + 1)
-    let Random = Math.floor((Math.random() * (120 - 19)) + 19)
+    let randomN = Math.floor(Math.random() * 100 + 1)
+    let randomN = Math.floor((Math.random() * (120 - 19)) + 19)
 
-    $("#targetNumber").text(Random);
+    $("#randomNumber").text(randomN);
 
-    let crystal1 = Math.floor(Math.random() * 12 + 1)
-    let crystal2 = Math.floor(Math.random() * 12 + 1)
-    let crystal3 = Math.floor(Math.random() * 12 + 1)
-    let crystal4 = Math.floor(Math.random() * 12 + 1)
-    let crystal1 = Math.floor((Math.random() * 12) + 1)
-    let crystal2 = Math.floor((Math.random() * 12) + 1)
-    let crystal3 = Math.floor((Math.random() * 12) + 1)
-    let crystal4 = Math.floor((Math.random() * 12) + 1)
+    let gemB1 = Math.floor(Math.random() * 12 + 1)
+    let gemG2 = Math.floor(Math.random() * 12 + 1)
+    let gemY3 = Math.floor(Math.random() * 12 + 1)
+    let gemP4 = Math.floor(Math.random() * 12 + 1)
+    let gemB1 = Math.floor((Math.random() * 12) + 1)
+    let gemG2 = Math.floor((Math.random() * 12) + 1)
+    let gemY3 = Math.floor((Math.random() * 12) + 1)
+    let gemP4 = Math.floor((Math.random() * 12) + 1)
 
-    console.log("Pink: " + crystal1, "Blue: " + crystal2, "Purple: " + crystal3, "Green: " + crystal4);
+    newFunction(gemB1, gemG2, gemY3, gemP4);
 
     $(document).ready(function () {
         let losses = 0;
@@ -36,92 +36,93 @@ $(document).ready(function () {
         }
     }
 
-    // click commands for each gem //
 
-    $("#pink").on("click", function () {
-        playerScore = playerScore + crystal1;
-        $("totalScore").text(playerScore);
-        $("#playerScore").text(playerScore);
+    $("#blueGem").on("click", function () {
+        userScore = userScore + gemB1;
+        $("totalScore").text(userScore);
+        $("#totalScore").text(userScore);
 
-        if (playerScore == Random) {
+        if (userScore == randomN) {
             alert("You Win!")
             winner();
         }
 
-        else if (playerScore > Random) {
+        else if (userScore > randomN) {
             alert("Nope, you lose!");
             loser();
         }
     })
 
-    $(".blue").on("click", function () {
-        $("#blue").on("click", function () {
-            playerScore = playerScore + crystal2;
-            $("totalScore").text(playerScore);
-            $("#playerScore").text(playerScore);
+    $("#greenGem").on("click", function () {
+        userScore = userScore + gemG2;
+        $("totalScore").text(userScore);
+        $("#totalScore").text(userScore);
 
-            if (playerScore == Random) {
-                alert("You Win!")
-                winner();
-            }
+        if (userScore == randomN) {
+            alert("You Win!")
+            winner();
+        }
 
-            else if (playerScore > Random) {
-                alert("Nope, you lose!");
-                loser();
-            }
-        })
+        else if (userScore > randomN) {
+            alert("Nope, you lose!");
+            loser();
+        }
+    })
 
-        $(".purple").on("click", function () {
 
-            $("#purple").on("click", function () {
-                playerScore = playerScore + crystal3;
-                $("totalScore").text(playerScore);
-                $("#playerScore").text(playerScore);
+            $("#yellowGem").on("click", function () {
+        userScore = userScore + gemY3;
+        $("totalScore").text(userScore);
+        $("#totalScore").text(userScore);
 
-                if (playerScore == Random) {
-                    alert("You Win!")
-                    winner();
-                }
+        if (userScore == randomN) {
+            alert("You Win!")
+            winner();
+        }
 
-                else if (playerScore > Random) {
-                    alert("Nope, you lose!");
-                    loser();
-                }
-            })
+        else if (userScore > randomN) {
+            alert("Nope, you lose!");
+            loser();
+        }
+    })
 
-            $(".green").on("click", function () {
-                $("#green").on("click", function () {
-                    playerScore = playerScore + crystal4;
-                    $("totalScore").text(playerScore);
-                    $("#playerScore").text(playerScore);
+                $("#purpleGem").on("click", function () {
+        userScore = userScore + gemP4;
+        $("totalScore").text(userScore);
+        $("#totalScore").text(userScore);
 
-                    if (playerScore == Random) {
-                        alert("You Win!")
-                        winner();
-                    }
+        if (userScore == randomN) {
+            alert("You Win!")
+            winner();
+        }
 
-                    else if (playerScore > Random) {
-                        alert("Nope, you lose!");
-                        loser();
-                    }
-                })
+        else if (userScore > randomN) {
+            alert("Nope, you lose!");
+            loser();
+        }
+    })
 
             });
 
-            function reset() {
-                Random = Math.floor((Math.random() * (120 - 19)) + 19);
-                $("#targetNumber").text(Random);
-                crystal1 = Math.floor((Math.random() * 12) + 1);
-                crystal2 = Math.floor((Math.random() * 12) + 1);
-                crystal3 = Math.floor((Math.random() * 12) + 1);
-                crystal4 = Math.floor((Math.random() * 12) + 1);
-                playerScore = 0;
-                $("#playerScore").text("0");
-            }
+function newFunction(gemB1, gemG2, gemY3, gemP4) {
+    console.log("Blue: " + gemB1, "Green: " + gemG2, "Yellow: " + gemY3, "Purple: " + gemP4);
+}
 
-            $("#reset").on("click", function () {
-                reset();
-            })
+function reset() {
+    Random = Math.floor((Math.random() * (120 - 19)) + 19);
+    $("#randomNumber").text(randomN);
+    gemB1 = Math.floor((Math.random() * 12) + 1);
+    gemG2 = Math.floor((Math.random() * 12) + 1);
+    gemY3 = Math.floor((Math.random() * 12) + 1);
+    gemP4 = Math.floor((Math.random() * 12) + 1);
+    userScore = 0;
+    $("#totalScore").text("0");
+}
 
-        });
-    }); 
+$("#restart").on("click", function () {
+    reset();
+});
+
+
+
+

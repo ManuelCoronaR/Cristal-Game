@@ -41,28 +41,32 @@
                     </ul>
                     <hr>
                     <div class="random row">
-                        <div class="col-sm-2 rounded-circle" id="randomNumber">xxx</div>
-                            <div id="scoreBoard" class="col-2">Wins: 78765
-                            <div class="col-2">Loses: 86765</div>
+                        <div class="col-sm-2 rounded-circle"><span id="randomNumber"></span></div>
+                            <div id="scoreBoard" class="col-2">Wins:<span id="wins"></span>
+                            <div class="col-2">Loses:<span id="losses"></span></div>
                         </div>
                     </div>
 
                     <hr>
                     <div class="row" id="gemDiv">
-                        <img src="images/blueGem.jpg" alt="Blue Gem" class="rounded-circle">
-                        <img src="images/greenGem.jpg" alt="Green Gem" class="rounded-circle">
-                        <img src="images/yellowGem.jpg" alt="Pink Gem" class="rounded-circle">
-                        <img src="images/purpleGem.jpg" alt="Purple Gem" class="rounded-circle">
+                        <img src="images/blueGem.jpg" alt="Blue Gem" class="rounded-circle" id="blueGem">
+                        <img src="images/greenGem.jpg" alt="Green Gem" class="rounded-circle" id="greenGem">
+                        <img src="images/yellowGem.jpg" alt="Pink Gem" class="rounded-circle" id="yellowGem">
+                        <img src="images/purpleGem.jpg" alt="Purple Gem" class="rounded-circle" id="purpleGem">
                     </div>
-                    <p class="scoreP">Your ToTal Score Is:</p>
-                    <div class="total" id="totalScore"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Total Score: <span id="totalScore"></span></h3>
+                        </div>
+
+                    </div>
                 </div>
-                <button type="button" class="btn btn-danger"><a href="#">Reset</a></button>
+                <button type="button" class="btn btn-danger" id="restart"><a href="#">Reset</a></button>
             </div>
         </div>
     </div>
 
-
+<script type="javascript" src="./javascript/game.js"></script>
 
 
 </body>
