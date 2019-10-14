@@ -1,32 +1,64 @@
+/* List of google fonts:
+font-family: 'Turret Road', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Black Ops One', cursive; */
+
 body {
-    /* background-image: url(../images/backgroundIMG.jpg); */
+    background-image:url(../images/backgroundIMG3.jpeg);
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    font-family: fantasy;
+    font-family: 'Turret Road', cursive;
+}
+* {
+    box-sizing: border-box;
 }
 .container-header {
+    background-color: rgb(121, 122, 48);
+    margin-top: 50px;
+
+    
 
 }
 .tittle{
-
+    background-color: darkred;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+h1 {
+    text-align: center;
+    padding: 2%;
 }
 .row1 {
 
 }
 .container {
+    width: 960px;
+    height: 600px;
     margin-left: 200px;
     margin-right: 200px;
 }
-#gemDiv {
+ol {
+    list-style-type: circle;
+}
+.random {
 
+}
+#randomNumber {
+    background-color: rgb(54, 122, 58);
+    font-size: 65px;
+}
+#gemDiv {
+    margin-bottom: 40px;
 }
 
 
 
 
-.rounded {
-    width: 80px;
-    height: 80px;
+.rounded-circle {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+.scoreP {
+    font-family: 'Turret Road', cursive;
 }

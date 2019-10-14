@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Love+Ya+Like+A+Sister|Turret+Road&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Cristal Collector Game</title>
 
@@ -19,37 +21,46 @@
         <div class="tittle">
             <h1><strong>Crystals Collector!</strong></h1>
         </div>
-
-        <div class="row1">
-            <div class="col" id="intr">
-                <h2>Introduction</h2>
-                <ul>
-                    <li>The computer will generate a target number at random.</li>
-                    <li>You have a choice of four crystals below. By clicking each one will increase your total score
-                        randomly.</li>
-                    <li>To win, your total score must equal the target number. If your number exceeds the target number
-                        you lose.</li>
-                    <li>The value of each crystal is hidden until selected and reflected in your total score.</li>
-                    <li>Each time the game resets, the crystal's values will change.</li>
-                </ul>
+        <div class="container">
+            <div class="row1">
+                <div class="col" id="intr">
+                    <h2>Introduction</h2>
+                    <ul>
+                        <ol>
+                            <li>The computer will generate a target number at random.</li>
+                            <li>You have a choice of four crystals below. By clicking each one will increase your total
+                                score
+                                randomly.</li>
+                            <li>To win, your total score must equal the target number. If your number exceeds the target
+                                number
+                                you lose.</li>
+                            <li>The value of each crystal is hidden until selected and reflected in your total score.
+                            </li>
+                            <li>Each time the game resets, the crystal's values will change.</li>
+                        </ol>
+                    </ul>
+                    <div class="random row">
+                        <div class="col-md-2" id="randomNumber">xxx</div>
+                    </div>
+                    <div class="col-2">Wins:</div>
+                    <div class="col-2">Losses:</div>
+                    <hr>
+                    <div class="row" id="gemDiv">
+                        <img src="images/blueGem.jpg" alt="Blue Gem" class="rounded-circle">
+                        <img src="images/greenGem.jpg" alt="Green Gem" class="rounded-circle">
+                        <img src="images/yellowGem.jpg" alt="Pink Gem" class="rounded-circle">
+                        <img src="images/purpleGem.jpg" alt="Purple Gem" class="rounded-circle">
+                    </div>
+                    <p class="scoreP">Your ToTal Score Is:</p>
+                    <div class="total"></div>
+                </div>
             </div>
         </div>
-
-        <div class="container">
-        <div class="row1">
-            <div class="col-2">Target Number</div>
-            <div class="col-2"></div>
-        </div>
-        </div>
+    </div>
 
 
-        <div id="gemDiv">
-            <img src="images/blueGem.jpg" alt="Blue Gem" class="rounded">
-            <img src="images/greenGem.jpg" alt="Green Gem" class="rounded">
-            <img src="images/yellowGem.jpg" alt="Pink Gem" class="rounded">
-            <img src="images/purpleGem.jpg" alt="Purple Gem" class="rounded">
-           
-        </div>
+
+
 </body>
 
 </html>
